@@ -1,0 +1,129 @@
+:root {
+  --shadow-1: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --shadow-2: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --shadow-3: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+input:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background-color: rgb(51, 51, 51);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90rem;
+}
+
+.container .box {
+  width: 70rem;
+  background-color: rgb(221, 221, 221);
+}
+
+.container .box:nth-child(2) {
+  flex-grow: 1;
+
+  border-radius: 10px;
+  background-color: rgb(221, 221, 221);
+}
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  /* height: 60rem; */
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  margin: 10px auto 6rem;
+}
+.form .item {
+  margin-top: 1rem;
+}
+
+.form .form__input {
+  width: 50rem;
+  height: 4rem;
+  font-size: 20px;
+
+  margin-top: 5px;
+  border-radius: 10px;
+  padding-right: 5px;
+  padding-left: 10px;
+  border: none;
+}
+
+.form .form__input__label {
+  font-size: 18px;
+  align-self: start;
+  color: #5a5a5a;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+  color: #5a5a5a;
+}
+
+.button_group {
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row nowrap;
+  margin-top: 2rem;
+}
+
+.button_group .btn {
+  padding: 1rem;
+  margin-left: 5px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.button_group .btn:nth-child(1) {
+  background-color: #0066b2;
+  color: aliceblue;
+}
+.button_group .btn:nth-child(1):hover {
+  background-color: rgb(0, 170, 248);
+}
+.button_group .btn:nth-child(2):hover {
+  background-color: rgb(0, 248, 186);
+}
+.logo {
+  width: 25rem;
+  margin-top: -12rem;
+}
+.warning {
+  color: red;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.pass-roll {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-size: 10rem;
+}

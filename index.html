@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="box"></div>
+        <div class="box">
+            <div class="form">
+                    <div class="item">
+                        <img class="logo" src="assets\media\img\logo\logo.png" alt="">
+                    </div>
+                <form action="" id="sign_up">
+
+                    <div class="item">
+                        <label class="form__input__label">user:</label><br>
+                        <input name="user" class="form__input" type="text" autocomplete="off">
+                        <p class="warning user_warning"></p>
+                    </div>
+                    <div class="item">
+                        <label class="form__input__label">phone</label><br>
+                        <input name="phone"  class="form__input" type="text" autocomplete="off">
+                        <p class="warning phone_warning"></p>
+                        <p class="warning phone_invalid"></p>
+                    </div>
+                    <div class="item">
+                        <label class="form__input__label">email:</label><br>
+                        <input name="email"  class="form__input" type="text" autocomplete="off">
+                        <p class="warning email_warning"></p>
+                        <p class="warning email_invalid"></p>
+                    </div>
+                    <div class="item">
+                        <label class="form__input__label">password:</label><br>
+                        <input name="pass" class="form__input" type="text" autocomplete="off">
+                        <p class="warning pass_warning"></p>
+                            <ul class="pass-roll">
+                                <li class="warning low">must need a Lowercase</li>
+                                <li class="warning upper">must need a Uppercase</li>
+                                <li class="warning Wnumber">must need a number</li>
+                                <li class="warning Wspecial">must need a special character (#$%&)</li>
+                                <li class="warning">at least 6 characters up to 20</li>
+                            </ul>
+                    </div>
+                    <div class="item">
+                        <label class="form__input__label">confirm password:</label><br>
+                        <input name="c_pass" class="form__input" type="text" autocomplete="off">
+                        <p class="warning c_pass_warning"></p>
+                        <p class="warning c_pass_notmatch"></p>
+                    </div>
+                    <div class="button_group">
+                        <button type="submit" class="btn">Submit</button>
+                        <button class="btn">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="box"></div>
+    </section>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
